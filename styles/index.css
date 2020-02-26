@@ -1,0 +1,324 @@
+/*Global style
+----------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+img{
+	width:400px;
+}
+
+body{
+	font-family: 'Open Sans';
+	background:#E8E8E8;
+	border:1px solid #000000;
+	box-shadow: inset 0 0 10px 10px #00ff00;
+}
+
+a{
+	text-decoration: none;
+	border-radius: 5px;
+    color: #000000;
+    font-family: 'Heebo';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h1, h2, h3{
+    font-family: 'Heebo';
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+h2{
+    font-size: 30px;
+    font-weight: 550;
+}
+h3{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+marquee{
+	font-family: 'Heebo';
+	font-size: 30px;
+    font-weight: 550;
+    background: #1e90ff;
+}
+
+main{
+	margin:0px 5%;
+}
+
+.sec{
+	color:#ff0000;
+	text-align:center;
+}
+
+
+/*Header
+----------------------*/
+
+#header{
+	background-image: url("../images/header1.jpg");
+	background-size: cover;
+	background-color: #a0a0a0;
+	color: white;
+	border: 9px solid #1e90ff;
+}
+
+#nav ul{
+	list-style-type: none;
+	display:flex;
+    justify-content: center;
+	
+}
+
+#nav li a{
+	display:block;
+	float:left;
+    margin: 5px 10px;
+    padding: 7px;
+    background-color: #a0a0a0;
+}
+
+#nav li a:hover{
+	background-color: #ff4040;
+    color: #ffffff;
+}
+
+#nav li #navIcon{
+	display:block;
+	padding:5px 20px;
+}
+
+#profile{
+	clear:left;
+}
+#profile:after{
+	content: "";
+	display: table;
+	clear: both;	
+}
+.profile{
+	float: left;
+}
+#profileimg{
+	width:30%;
+}
+#profiletxt{
+	width:70%;
+}
+#profiletxt p{
+	width:80%;
+}
+.hbtn{
+	margin: 40px 10px;
+    padding: 7px;
+    background-color: #a0a0a0;
+}
+.hbtn:hover{
+	background-color: #5e5e5e;
+    color: #ffffff;
+}
+
+
+/*skills
+----------------------*/
+#skills{
+	margin: 10px 25px;
+}
+
+#skillsets{
+	border:15px solid #1e90ff;
+	box-shadow: inset 0 0 30px 10px #00ff00;
+	
+}
+
+.skillset{
+	width:220px;
+	text-align:center;
+	font-size:20px;
+	margin:15px;
+	display:inline-block;
+}
+.skillset:after{
+	content: "";
+	display:table;
+	clear:both;
+}
+
+.skillset img{
+	width:120px;
+	height:120px;
+	padding:50px;
+}
+
+/*Education & Experience
+----------------------*/
+
+.ptitle{
+	margin:0px;
+	font-size:25px;
+}
+.organization{
+	margin:0px;
+	font-size:20px;
+	background-color:#1e90ff;
+	color:#ffffff;
+	overflow:hidden;
+	border-radius:5px;
+	border-radius: 5px;
+    padding: 0 10px;
+    width: fit-content;
+}
+
+
+.down{
+	font-size:40px;
+	color:#ff0000;
+	margin:10px;
+	float:right;
+}
+
+.col1{
+	display:inline-block;
+	width:90%;
+}
+
+.collaps{
+	padding:30px;
+	border-radius:20px;
+	margin:15px;
+	color:#000000;
+	border:15px solid #1e90ff;
+	box-shadow: inset 0 0 30px 10px #00ff00;
+}
+.head{
+	cursor: pointer;
+	transition: 0.4s;
+	padding:15px;
+	width: 100%;
+	text-align: left;
+	background:none;
+  	border:none;
+  	border-radius:8px;
+  	outline:none;
+}
+.hidden{
+	max-height: 0;
+	transition: max-height 0.5s ease-out;
+	overflow: hidden;
+}
+.active, .head:hover{
+	background-color:#1e90ff;
+	border:none;
+}
+
+/*Footer
+----------------------*/
+footer{
+	background-image: url("../images/header1.jpg");
+	background-size: cover;
+	background-color: #a0a0a0;
+	color: #ffffff;
+	border: 9px solid #1e90ff;
+	text-align: center;
+}
+
+footer i{
+	font-size:40px;
+	color:#ffffff;
+	margin:10px;
+	transition:transform 1s;
+}
+footer i:hover{
+	color:#ff0000;
+	transform: rotate(360deg);
+}
+
+
+
+/*Media Queries
+----------------------*/
+
+
+/*Navigation
+----------------------*/
+@media screen and (max-width: 750px) {
+	#nav nav ul li a{
+		 margin: 2.5px 5px;
+    	 padding: 7px;
+    	 font-size: 13px;
+    	 }
+    #nav ul{
+	    padding:0px;
+	    display:flex;
+	    justify-content: center;
+	    }
+}
+
+/*Profile
+----------------------*/
+
+@media screen and (max-width: 1025px){
+	#profileimg{
+		display:block;
+		text-align: center;
+		width:100%;
+		}
+	#profiletxt{
+	 	text-align:justify;
+		width:100%;
+		margin-left:auto;
+		margin-left:10%;
+		margin-bottom:40px;
+	}
+}
+
+@media screen and (max-width:700px){
+	#profiletxt h2{
+	font-size: 25px;
+	margin-bottom:40px;}
+}
+
+@media screen and (max-width:1000px){
+	.col1{
+		width:300px;
+	}
+	.ptitle{
+		font-size:20px;
+	}
+	.organization{
+		font-size:15px;
+	}
+	.down{
+		margin-top: 15px;
+	}
+
+@media screen and (max-width:680px){
+	.skillset{
+		margin-left:20%;
+	}
+}
+
+	
+@media screen and (max-width:650px){
+	.col1{
+		width:70%;
+	}
+	.ptitle{
+		font-size:20px;
+	}
+	.organization{
+		font-size:15px;
+	}
+	.down{
+		margin-top: 40px;
+		font-size:30px;
+	}
+}
+	
+}
