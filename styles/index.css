@@ -1,3 +1,10 @@
+/*Indeed badge
+----------------------*/
+
+.LI-badge-container-vertical-light {
+	margin-top: 6%;
+}
+
 /*Global style
 ----------------------*/
 
@@ -109,7 +116,7 @@ main{
 	width:30%;
 }
 #profiletxt{
-	width:70%;
+	width:45%;
 }
 #profiletxt p{
 	width:80%;
